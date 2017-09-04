@@ -6,3 +6,4 @@ CREATE TABLE IF NOT EXISTS `user_social` (
     `page` VARCHAR(150),
     `created` TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+CREATE INDEX `by_user` ON `user_social` ( `user` );
